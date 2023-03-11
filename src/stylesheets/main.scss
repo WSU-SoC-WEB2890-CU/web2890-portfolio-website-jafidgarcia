@@ -1,3 +1,24 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+html{
+    background-color: rgb(4, 22, 40);
+}
+
+nav{
+    background-color: rgb(4, 22, 40);
+    .logoLink{
+        color: rgb(162, 147, 96) ;
+    }
+    .nav-link{
+        color: white;
+        font-size: 1.2rem;
+        margin-right: 10px;
+        &:hover{
+            color: rgb(162, 147, 96) ;
+            transform: scale(1.2);
+        }
+    }
+}
