@@ -15,10 +15,12 @@ $grid-breakpoints: (
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-html{
-    background-color: rgb(4, 22, 40);
+html, body{
+    background-color: rgb(4, 22, 40)!important;
 }
-
+// .container{
+//     background-color: rgb(4, 22, 40);
+// }
 nav{
     background-color: rgb(4, 22, 40);
     .logoLink{
@@ -97,3 +99,11 @@ nav{
       }
 
     }
+
+// color looks funny
+    hr {
+        border: 3px solid #A29360; // remove default border
+        margin: 20px 0;
+        color:#A29360 ;
+        background-color: #A29360;
+      }
