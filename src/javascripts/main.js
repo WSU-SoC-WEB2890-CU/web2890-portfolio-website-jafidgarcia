@@ -1,6 +1,17 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
 
+function toggleDiv() {
+    var myDiv = document.getElementById("myDiv");
+    if (myDiv.style.display === "none") {
+      myDiv.style.display = "block";
+    } else {
+      myDiv.style.display = "none";
+    }
+  }
+  
+
+
 
 
 const hrElements = document.querySelectorAll('.moves');

@@ -19,6 +19,7 @@ $grid-breakpoints: (
 //   "dark":       $dark
 // );
 $secondary: #A29360 ;
+$info: #95B3BF;
 
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
@@ -127,11 +128,7 @@ nav{
         border-top: 4px solid #A29360 ; // remove default border
         opacity: 1; //color was faded out for some reason
       }
-      .titles {
-        // width: fit-content;
-        // margin-left: 0;
-        width: 10%;
-      }
+
       .slide-in {
         
         animation: slides 3s ease-in-out 1;

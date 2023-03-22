@@ -95,22 +95,12 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-4 col-md-4 col-sm-12">
-
+          <!-- using d-flex to align the h2 in the center of the lines -->
           <div class="d-flex flex-row mb-3 text-white moves">
-            <div class="p-2 line">
-             
-            </div>
+            <div class="p-2 line"></div>
             <div class="p-2"><h2 class="text-white ">My <br> Services</h2></div>
-            <div class="p-2 line">
-              
-            </div>
+            <div class="p-2 line"></div>
           </div>
-
-          <!-- <div class="testingClass">
-            <h2 class="text-white moves">My <br> Services</h2>
-            <hr class="titles">
-          </div> -->
-        
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -119,7 +109,7 @@
             Eligendi repellat ducimus eaque reprehenderit nemo tempora, 
             necessitatibus perspiciatis illo consequatur dolorem similique 
             odit enim voluptate, at officia doloremque vel quo et.</p>
-          <button class="btn btn-secondary">See UX/UI Projects</button>
+          <button class="btn btn-outline-secondary">See UX/UI Projects</button>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -128,7 +118,7 @@
             Eligendi repellat ducimus eaque reprehenderit nemo tempora, 
             necessitatibus perspiciatis illo consequatur dolorem similique 
             odit enim voluptate, at officia doloremque vel quo et.</p>
-          <button class="btn btn-secondary">See Development Projects</button>
+          <button class="btn btn-outline-secondary">See Development Projects</button>
         </div>
       </div>
     </div>
@@ -140,7 +130,12 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="text-white moves">Recent <br> Work</h2>
+            <!-- using d-flex to align the h2 in the center of the lines -->
+            <div class="d-flex flex-row mb-3 text-white moves">
+                      <div class="p-2 line"></div>
+                      <div class="p-2"><h2 class="text-white ">Recent <br> Work</h2></div>
+                      <div class="p-2 line"></div>
+            </div>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 text-white">
           <p>I am proud to share some of my recent work, which showcases my skills in web development 
@@ -152,7 +147,7 @@
               Each project presented its own unique challenges, and I am proud to say that I was able to deliver exceptional 
               results that exceeded my clients’ expectations.</p>
 
-            <button class="btn btn-secondary">See More Projects</button>
+            <button class="btn btn-outline-secondary">See More Projects</button>
         </div>
       </div>
 
@@ -165,7 +160,13 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="text-white">Eduacation & <br> Experience</h2>
+          <!-- using d-flex to align the h2 in the center of the lines -->
+          <div class="d-flex flex-row mb-3 text-white moves">
+            <div class="p-2 line"></div>
+            <div class="p-2"><h2 class="text-white ">Education <br> & Experience</h2></div>
+            <div class="p-2 line"></div>
+          </div>
+
         </div>
         <div class="col-lg-2 col-md-2 col-sm-12"></div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -180,10 +181,15 @@
             <p class="text-white">April 2023 - Weber State University </p>
             <hr>
           <h4 class="text-white">Other College Courses</h4>
-          <button class="btn btn-secondary">See More</button>
+          <button onclick="toggleDiv()" class="btn btn-outline-secondary">See More</button>
+          <!-- collapse div for buttom See More -->
+          <div class="container mt-3 text-white" id="myDiv" style="display:none;">
+            <h5>I can insert A list of ohter college courses that apply</h5>
+          </div>
+
           <hr>
           <h4 class="text-white">See Full Resume</h4>
-          <button class="btn btn-secondary">Download Resume</button>
+          <button class="btn btn-outline-secondary">Download Resume</button>
         </div>
       </div>
     </div>
@@ -195,15 +201,21 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="text-white">Let's <br> Work</h2>
+          <!-- using d-flex to align the h2 in the center of the lines -->
+          <div class="d-flex flex-row mb-3 text-white moves">
+            <div class="p-2 line"></div>
+            <div class="p-2"><h2 class="text-white ">Let's <br> Work</h2></div>
+            <div class="p-2 line"></div>
+          </div>
+
         </div>
 
         <div class="col-lg-8 col-md-8 col-sm-12">
-          <H1 class="text-center text-white">jafidgarcia@gmail.com</H1>
+          <H1 class="text-center text-info">jafidgarcia@gmail.com</H1>
 
           <form class="form-group" action="">
-          <div class="container" style="border: solid 1px pink;">
-            <div class="row">
+          <div class="container">
+            <div class="row mt-5">
               <div class="col-6">
                 <div class="form-group">
                   <label class="text-white" for="name">Name</label>
@@ -227,6 +239,12 @@
               </div>
             </div>
           </div>
+
+          <div class="d-grid gap-2 col-6 mx-auto mt-3">
+            <button class="btn btn-secondary" type="button">Send Email</button>
+
+          </div>
+
           </form>
 
         </div>
@@ -252,5 +270,15 @@
 
 
   <script type="module" src="./javascripts/main.js"></script>
+  <script>
+    function toggleDiv() {
+    var myDiv = document.getElementById("myDiv");
+    if (myDiv.style.display === "none") {
+      myDiv.style.display = "block";
+    } else {
+      myDiv.style.display = "none";
+    }
+  }
+  </script>
 </body>
 </html>
