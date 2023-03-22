@@ -8,7 +8,17 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
-
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+$secondary: #A29360 ;
 
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
@@ -100,15 +110,30 @@ nav{
 
     }
 
-// color looks funny
-    hr {
-        border: 3px solid #A29360; // remove default border
-        margin: 20px 0;
-        color:#A29360 ;
-        background-color: #A29360;
-      }
+    .line {
+      position: relative;
+    }
+    .line::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      // width: 20px;
+      border-top: 4px solid $secondary;
+    }
 
+    hr {
+        border-top: 4px solid #A29360 ; // remove default border
+        opacity: 1; //color was faded out for some reason
+      }
+      .titles {
+        // width: fit-content;
+        // margin-left: 0;
+        width: 10%;
+      }
       .slide-in {
+        
         animation: slides 3s ease-in-out 1;
         @keyframes slides {
           0% {

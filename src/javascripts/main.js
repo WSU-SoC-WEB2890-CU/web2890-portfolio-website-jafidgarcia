@@ -8,7 +8,7 @@ const hrElements = document.querySelectorAll('.moves');
 hrElements.forEach((hrElements,index)=>{
 hrElements.classList.add('slide-in');
 
-hrElements.id = `section-${index + 1}`;
+hrElements.id = `id-${index + 1}`;
 
   // Create an IntersectionObserver for each section
   const observer = new IntersectionObserver(entries => {
