@@ -41,7 +41,7 @@ nav{
         color: white;
         font-size: 1.2rem;
         margin-right: 10px;
-        &:hover{
+        &:hover, &:focus{
             color: rgb(162, 147, 96) ;
             transform: scale(1.2);
         }
@@ -111,6 +111,18 @@ nav{
 
     }
 
+
+    // about section rules
+    .aboutAnimate{
+      scale: 1;
+      &:hover{
+        scale: 1.1;
+        cursor: pointer;
+      }
+    }
+
+
+
     .line {
       position: relative;
     }
@@ -142,4 +154,7 @@ nav{
         }
         
       }
+      // .slide-in.show {
+      //   opacity: 1;
+      // }
       
