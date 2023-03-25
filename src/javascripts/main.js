@@ -1,10 +1,6 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
-
-
-  
-
-
+import * as fontawesome from "@fortawesome/fontawesome-free/js/all"
 
 
 const hrElements = document.querySelectorAll('.moves');
@@ -18,7 +14,7 @@ hrElements.id = `id-${index + 1}`;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
-        entry.target.classList.add('show');
+        entry.target.classList.add("show");
       }
     });
   });
@@ -45,3 +41,12 @@ hrElements.id = `id-${index + 1}`;
 // }
 
 // window.addEventListener('scroll', animateHrElements);
+
+
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.intersectionRatio > 0) {
+//       entry.target.classList.add('show');
+//     }
+//   });
+// });

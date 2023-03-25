@@ -18,12 +18,14 @@ $grid-breakpoints: (
 //   "light":      $light,
 //   "dark":       $dark
 // );
+$primary: rgb(4, 22, 40);
 $secondary: #A29360 ;
 $info: #95B3BF;
 
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "~@fortawesome/fontawesome-free/css/all.css";
 
 
 html, body{
@@ -33,10 +35,7 @@ html, body{
 //     background-color: rgb(4, 22, 40);
 // }
 nav{
-    background-color: rgb(4, 22, 40);
-    .logoLink{
-        color: rgb(162, 147, 96) ;
-    }
+    // background-color: rgb(4, 22, 40);
     .nav-link{
         color: white;
         font-size: 1.2rem;
@@ -46,6 +45,14 @@ nav{
             transform: scale(1.2);
         }
     }
+    // why is this not appearing unless clicked?
+    .navbar-toggler, .navbar-toggler-icon{
+      color: $secondary;
+    }
+    .navbar-toggler-icon{
+      color: #A29360;
+    }
+
 }
 
 
@@ -92,7 +99,7 @@ nav{
         transform: translate(-50%, 50%);
         width: 50px;
         height: 50px;
-        animation: flashing 3s ease-in-out 3;
+        // animation: flashing 3s ease-in-out 3;
       }
       @keyframes flashing {
         0% {
@@ -158,3 +165,14 @@ nav{
       //   opacity: 1;
       // }
       
+
+      // footer rules
+      footer{
+        border-top: $info solid 5px;
+      }
+      ul{
+        list-style: none;
+        li{
+          margin-right: 10px;
+        }
+      }
