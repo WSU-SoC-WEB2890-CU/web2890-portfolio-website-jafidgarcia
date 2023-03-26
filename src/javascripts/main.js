@@ -55,16 +55,17 @@ sections.forEach((section, index) => {
 
 ///////////////////////////////////////////////////////////////////////
 // for projects page carousel
-// Get references to the divs we'll be using
 const hoverDivs = document.querySelectorAll(".projectOverview");
 const imageDiv = document.getElementById("displayProjectOverview");
+const hideThis = document.getElementById("hideThis");
 
-// Loop through each hover div and add event listeners
+// Loop through each projectOverview and add event listeners
 hoverDivs.forEach((hoverDiv) => {
   hoverDiv.addEventListener("mouseover", () => {
-    // Get the path to the image from the data attribute
+    // Get the path to the image from the data-image
     const imagePath = hoverDiv.getAttribute("data-image");
-
+    // hides instruction message
+    hideThis.style.display = ("none");
     // Set the background image of the image div
     imageDiv.style.backgroundImage = `url(${imagePath})`;
   });

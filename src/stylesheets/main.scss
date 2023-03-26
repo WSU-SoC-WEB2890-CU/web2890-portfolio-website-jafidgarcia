@@ -178,9 +178,13 @@ nav{
       .projectOverview{
         &:hover{
           color: $info;
-          transform: scale(.9);
+          transform: scale(1.1);
         }
       }
+      #hideThis{
+        margin-top: 250px;
+      }
+
       
       ///////////////////////////////////////////////////// 
 
