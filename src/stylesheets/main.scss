@@ -176,18 +176,43 @@ nav{
       /// projects home page rules
       
       .projectOverview{
-        &:hover{
-          color: $info;
-          transform: scale(1.1);
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{
+            color: $info;
+          }
         }
+        &:hover{transform: scale(1.1);}
+
       }
       #hideThis{
         margin-top: 250px;
       }
-
-      
       ///////////////////////////////////////////////////// 
 
+
+
+      ///////////////////////////////////////////////////// 
+      /// Project subpages rules 
+      strong{
+        font-weight: 800;
+      }
+      .projectDescription > p{
+        font-weight:300;
+      }
+      .breadCrumbNav{
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{
+            color: $info;
+          }
+        }
+        &:hover{color: $info;}
+
+      }
+      
 
 
       /////////////////////////////////////////////////////
