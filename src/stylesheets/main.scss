@@ -41,9 +41,15 @@ nav{
         font-size: 1.2rem;
         margin-right: 10px;
         &:hover, &:focus{
-            color: rgb(162, 147, 96) ;
-            transform: scale(1.2);
+            color: $info ;
+            transform: scale(1.5);
         }
+        @media(max-width: 992px){
+          &:hover, &:focus{
+            color: $info;
+            transform: scale(.9);
+        }
+          }    
     }
     // why is this not appearing unless clicked?
     .navbar-toggler, .navbar-toggler-icon{
@@ -166,6 +172,21 @@ nav{
       // }
       
 
+      /////////////////////////////////////////////////////
+      /// projects home page rules
+      
+      .projectOverview{
+        &:hover{
+          color: $info;
+          transform: scale(.9);
+        }
+      }
+      
+      ///////////////////////////////////////////////////// 
+
+
+
+      /////////////////////////////////////////////////////
       // footer rules
       footer{
         border-top: $info solid 5px;
@@ -176,3 +197,19 @@ nav{
           margin-right: 10px;
         }
       }
+      /////////////////////////////////////////////////////
+
+
+
+
+
+// this also needs to be kept at the bottom of the scss so it is not over written by other rules
+// this is for javascript code for fade in effect when scrolling
+// this begins at the aboutUs section
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}

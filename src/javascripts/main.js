@@ -26,6 +26,58 @@ hrElements.id = `id-${index + 1}`;
 
 
 
+///////////////////////////////////////////////////////////////////////
+// creates fade in effect for all sections when they are scrolled past
+const sections = document.querySelectorAll('section');
+
+sections.forEach((section, index) => {
+  // Add a class to each section to set up the animation
+  section.classList.add('fade-in');
+
+  // Add an ID to each section to use with IntersectionObserver
+  section.id = `section-${index + 1}`;
+
+  // Create an IntersectionObserver for each section
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  // Observe the section
+  observer.observe(section);
+});
+///////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////
+// for projects page carousel
+// Get references to the divs we'll be using
+const hoverDivs = document.querySelectorAll(".projectOverview");
+const imageDiv = document.getElementById("displayProjectOverview");
+
+// Loop through each hover div and add event listeners
+hoverDivs.forEach((hoverDiv) => {
+  hoverDiv.addEventListener("mouseover", () => {
+    // Get the path to the image from the data attribute
+    const imagePath = hoverDiv.getAttribute("data-image");
+
+    // Set the background image of the image div
+    imageDiv.style.backgroundImage = `url(${imagePath})`;
+  });
+
+  hoverDiv.addEventListener("mouseout", () => {
+    // Clear the background image of the image div
+    imageDiv.style.backgroundImage = "";
+  });
+});
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+
 //  cant get to work correct
 // const hrElements = document.querySelectorAll('.moves');
 
