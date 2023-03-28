@@ -76,13 +76,21 @@ hoverDivs.forEach((hoverDiv, index) => {
     const imageUrl = imageUrls[index];
     // hides instruction message
     hideThis.style.display = ("none");
-    // Set the background image of the image div
-    imageDiv.style.backgroundImage = `url(${imageUrl})`;
+
+    // // Set the background image of the image div
+    // imageDiv.style.backgroundImage = `url(${imageUrl})`;
+
+        // Set the src attribute of the image element
+        imageDiv.setAttribute("src", imageUrl);
+
+
   });
 
   hoverDiv.addEventListener("mouseout", () => {
     // Clear the background image of the image div
-    imageDiv.style.backgroundImage = "";
+
+    // imageDiv.style.backgroundImage = "";
+      imageDiv.setAttribute("src", "");
   });
 });
 ///////////////////////////////////////////////////////////////////////
