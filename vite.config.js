@@ -4,6 +4,7 @@ const glob = require("glob")
 
 import { defineConfig } from "vite"
 import eslint from "@rollup/plugin-eslint"
+// import copy from "vite-plugin-copy";
 
 let input = {}
 

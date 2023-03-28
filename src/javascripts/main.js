@@ -55,19 +55,29 @@ sections.forEach((section, index) => {
 
 ///////////////////////////////////////////////////////////////////////
 // for projects page carousel
+const imageUrls = [
+  "../images/project1/project1MainImg.png",
+  "../images/project2/Project2MainImg.png",
+  "../images/project3/Project3MainImg.png",
+  "../images/project4/Project4MainImg.png",
+  "../images/project5/Project5MainImg.png",
+  "../images/project6/Project6MainImg.png"
+];
+
+
 const hoverDivs = document.querySelectorAll(".projectOverview");
 const imageDiv = document.getElementById("displayProjectOverview");
 const hideThis = document.getElementById("hideThis");
 
 // Loop through each projectOverview and add event listeners
-hoverDivs.forEach((hoverDiv) => {
+hoverDivs.forEach((hoverDiv, index) => {
   hoverDiv.addEventListener("mouseover", () => {
     // Get the path to the image from the data-image
-    const imagePath = hoverDiv.getAttribute("data-image");
+    const imageUrl = imageUrls[index];
     // hides instruction message
     hideThis.style.display = ("none");
     // Set the background image of the image div
-    imageDiv.style.backgroundImage = `url(${imagePath})`;
+    imageDiv.style.backgroundImage = `url(${imageUrl})`;
   });
 
   hoverDiv.addEventListener("mouseout", () => {
