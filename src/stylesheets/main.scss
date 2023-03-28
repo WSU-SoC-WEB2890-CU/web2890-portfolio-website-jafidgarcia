@@ -177,6 +177,7 @@ nav{
       /// projects home page rules
       
       .projectOverview{
+
         a{
           color: white;
           text-decoration: none;
@@ -189,6 +190,11 @@ nav{
       }
       #hideThis{
         margin-top: 250px;
+      }
+      #displayProjectOverview{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
       }
       ///////////////////////////////////////////////////// 
 
