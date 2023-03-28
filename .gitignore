@@ -4,6 +4,9 @@ dist/*
 /tmp
 /out-tsc
 
+# Allow all asset files
+# !dist/assets/
+
 # dependencies
 /node_modules
 
