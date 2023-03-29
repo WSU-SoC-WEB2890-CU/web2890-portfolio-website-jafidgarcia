@@ -53,12 +53,13 @@ nav{
           }    
     }
     // why is this not appearing unless clicked?
-    .navbar-toggler, .navbar-toggler-icon{
+    .navbar-toggler{
       color: $secondary;
     }
-    .navbar-toggler-icon{
-      color: #A29360;
-    }
+    // .navbar-toggler-icon{
+    //   color: red;
+    //   background-color: purple;
+    // }
 
 }
 
