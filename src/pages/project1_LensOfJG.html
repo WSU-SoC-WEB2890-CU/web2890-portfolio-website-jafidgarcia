@@ -75,14 +75,26 @@
    <div class="projectDescription text-white">
     <p><strong class="text-info">Client:</strong> Jared Garcia (Lense of JG)</p>
 
+    <p><strong class="text-info">Project Proposal:</strong> <a style="color: #ffffff; text-decoration: none;" href="../../resources/Project 2 Proposal.pdf" target="_blank">See Proposal</a></p>
+
     <p><strong class="text-info">Technologies:</strong> HTML, CSS, SCSS, JavaScript
       Bootstrap, Git, Netlify, Vite, Photoshop, XD</p>
 
-    <p><strong class="text-info">Project Description:</strong>  </p>
+    <p><strong class="text-info">Project Description:</strong> The client, Lense Of JG needed, a responsive website where they could showcase their 
+    different services offered as am up and coming media company. The project was orginally supposed to showcase more of their video work
+    but as the project was underway the client decided they wanted to shift to showcase their photography services more until further notice.
+    They still wanted to represent their videography and video editing services without having entire pages dedicated to it.</p>
 
-      <p><strong class="text-info">Design:</strong> </p>
+      <p><strong class="text-info">Design:</strong> Part of the challenge for this project was shifting gears as I had already begun to code the site according to the initial wireframe.
+        This required to me to rework design elements to showcase photography galleries as a primary and some videography as a secondary purpose of the site.
+       </p>
 
-        <p><strong class="text-info">Development:</strong>   </p>
+       <p>Another unique challenge for this website was having different video clips to fit the responsive nature of the site. Becasue a normal video clip is shot landscape, I
+        needed to also provide the mobile version of the site with vertical videos, that was accomplished by changing the videos using Bootstrap breakpoints and SASS
+       </p>
+
+      <p><strong class="text-info">Development:</strong> To give the gallery website a more artisic feel I devided to incorporate small animations via
+      Javascript to create fade-in effects as well as a horizontal scroll that only requires the user to scroll on the page and not click and drag over.</p>
 
     
    </div> 
@@ -90,35 +102,57 @@
 
 <!-- right carousel image section -->
   <div class="col-lg-7 col-md-7 col-sm-12">
-
+<!-- start of carousel -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="../images/project1/img1.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Mobile XD Medium Fidelty Prototype</h5>
+            <h5>Desktop Wireframe</h5>
             <!-- <p>Some representative placeholder content for the first slide.</p> -->
           </div>
         </div>
+
         <div class="carousel-item" data-bs-interval="2000">
           <img src="../images/project1/img2.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Desktop XD Medium Fidelty Prototype</h5>
+            <h5>Mobile Wireframe</h5>
             <!-- <p>Some representative placeholder content for the second slide.</p> -->
           </div>
         </div>
-        <div class="carousel-item">
+
+        <div class="carousel-item" data-bs-interval="2000">
           <img src="../images/project1/img3.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Tablet XD Medium Fidelty Prototype</h5>
+            <h5>Image Gallery from Live Site</h5>
             <!-- <p>Some representative placeholder content for the third slide.</p> -->
           </div>
         </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../images/project1/img4.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Services Section from Live Site</h5>
+            <!-- <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../images/project1/img5-notes.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Brainstorming notes with Client</h5>
+            <!-- <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,9 +163,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-
+<!-- end of carousel -->
   </div>
 
 </div>
