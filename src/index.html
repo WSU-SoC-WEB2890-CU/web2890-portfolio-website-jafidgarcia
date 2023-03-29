@@ -208,8 +208,13 @@
           <h4 class="text-white">Other College Courses</h4>
           <button onclick="toggleDiv()" class="btn btn-outline-secondary">See More</button>
           <!-- collapse div for buttom See More -->
-          <div class="container mt-3 text-white" id="myDiv" style="display:none;">
-            <h5>I can insert A list of ohter college courses that apply</h5>
+          <div class="container mt-3 text-white " id="myDiv" style="display:none;">
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">CS 1410 | Object-Oriented Programming</li>
+              <li class="list-group-item">CS 2350 | Client Side Web Development </li>
+              <li class="list-group-item">ETC 2001 | Engineering Culture </li>
+            </ul>
           </div>
 
           <hr>
@@ -238,35 +243,57 @@
         <div class="col-lg-8 col-md-8 col-sm-12">
           <H1 class="text-center text-info">jafidgarcia@gmail.com</H1>
 
-          <form class="form-group" action="">
+          <!-- start of form -->
+          <form id="contact-form" name="contact-form" action="https://formsubmit.co/jafidgarcia@gmail.com" method="POST">
           <div class="container">
             <div class="row mt-5">
+
               <div class="col-6">
                 <div class="form-group">
                   <label class="text-white" for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="First and Last Name">
+                  <input required type="text" class="form-control" id="name" name="name" placeholder="First and Last Name">
+
                 </div>
               </div>
+
               <div class="col-6">
                 <div class="form-group">
-                  <label class="text-white" for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label class="text-white" for="email">Email address</label>
+                  <!-- <input type="text" id="email" name="email" required  class="form-control"> -->
+                  <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
               </div>
             </div>
+
+          <!-- hidden row for email -->
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="md-form mb-0">
+                      <input type="hidden" id="subject" name="subject" class="form-control" value="New Email from Website">
+                      <!-- <label for="subject" class="">Subject</label> -->
+                      <!-- https://yourdomain.co/thanks.html -->
+                      <input type="hidden" name="_next" value="https://jafid-garcia.netlify.app">
+                      <input type="hidden" name="_captcha" value="true">
+                  </div>
+              </div>
+          </div>
+
+
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-                  <label class="text-white" for="exampleFormControlTextarea1">Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Message" rows="3"></textarea>
+                  
+                  <textarea required class="form-control" name="message" id="message" type="text" placeholder="Enter Message" rows="3"></textarea>
+                  <label class="text-white" for="message">Message</label>
+
                 </div>
               </div>
             </div>
           </div>
 
           <div class="d-grid gap-2 col-6 mx-auto mt-3">
-            <button class="btn btn-secondary" type="button">Send Email</button>
+            <button class="btn btn-secondary" type="submit">Send Email</button>
 
           </div>
 

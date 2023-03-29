@@ -84,7 +84,7 @@ nav{
       display: block;
       }
       h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
     .jumboMessage{
     //   font-family: 'Rubik', sans-serif;
@@ -185,6 +185,9 @@ nav{
     }
 // end of videoContainerDesktop Rules
 
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
     // about section rules
     .aboutAnimate{
       scale: 1;
@@ -226,6 +229,11 @@ nav{
           }
         }
         
+      }
+
+      .list-group-flush, .list-group-item{
+        background-color: transparent!important;
+        color: white!important;
       }
       // .slide-in.show {
       //   opacity: 1;
