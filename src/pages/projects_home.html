@@ -17,7 +17,7 @@
     <!-- nav section -->
     <nav class="navbar navbar-expand-lg bg-primary mb-3">
       <div class="container-fluid">
-        <a class="navbar-brand text-secondary" href="#">JStacked</a>
+        <a class="navbar-brand text-secondary" href="../index.html">JStacked</a>
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon">Click Here</span> -->
@@ -56,7 +56,7 @@
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12" >
 <!-- project 1 -->
-            <div class="projectOverview" data-image="../images/project1/project1MainImg.png">
+            <div class="projectOverview" id="trigger-1">
               <a href="./project1_LensOfJG.html">
                 <h4>01- Lens of JG</h4>
                 <ul class="">
@@ -67,7 +67,7 @@
                 </a>
             </div>
 <!-- project 2 -->
-            <div class="projectOverview" data-image="../images/project2/Project2MainImg.png">
+            <div class="projectOverview" id="trigger-2">
                 <a href="./project2_adventure-sports.html">
                 <h4>02- Adventure Sports Media</h4>
                 <ul class="">
@@ -79,7 +79,7 @@
                 </a> 
             </div>
 <!-- project 3 -->
-            <div class="projectOverview" data-image="../images/project3/Project3MainImg.png">
+            <div class="projectOverview" id="trigger-3">
               <a href="./project3_OG-Valley-Adapt.html">
                 <h4>03- Ogden Valley Adaptive</h4>
                 <ul class="">
@@ -89,7 +89,7 @@
                 </a>
             </div>
 <!-- project 4 -->
-            <div class="projectOverview" data-image="../images/project4/Project4MainImg.png">
+            <div class="projectOverview" id="trigger-4">
               <a href="./project4_Stock-Trader.html">
                 <h4>04- Stock Trader App</h4>
                 <ul class="">
@@ -100,7 +100,7 @@
               </a>
             </div>
 <!-- project 5 -->
-            <div class="projectOverview" data-image="../images/project5/Project5MainImg.png">
+            <div class="projectOverview" id="trigger-5">
               <a href="./project5_JTasks.html">
                 <h4>05- JTasks</h4>
                 <ul class="">
@@ -110,7 +110,7 @@
                 </a> 
             </div>
 <!-- project 6 -->
-            <div class="projectOverview" data-image="../images/project6/Project6MainImg.png">
+            <div class="projectOverview" id="trigger-6">
               <a href="./project6_CarDeal.html">
                 <h4>06- CarDeal</h4>
                 <ul class="">
@@ -123,14 +123,24 @@
         </div>
 
         <!-- right side that displays images -->
-        <div class="col-lg-8 col-md-8 col-sm-12" id="" >
-          <img class="img-fluid" src="" alt="" id="displayProjectOverview">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+        <!-- JS triggers which image is displayed -->
+          <img class="img-fluid" src="../images/projectMainImg1.png" id="image-1">
+          <img class="img-fluid" src="../images/projectMainImg2.png" id="image-2">
+          <img class="img-fluid" src="../images/projectMainImg3.png" id="image-3">
+          <img class="img-fluid" src="../images/projectMainImg4.png" id="image-4">
+          <img class="img-fluid" src="../images/projectMainImg5.png" id="image-5">
+          <img class="img-fluid" src="../images/projectMainImg6.png" id="image-6">
+
+          <!-- <img class="img-fluid" src="" alt="" id="displayProjectOverview"> -->
+          <!-- <img src="../images/project1/project1MainImg.png" id="project1" alt="">
+          <img src="../images/project1/project1MainImg.png" id="project2" alt="">
+          <img src="../images/project1/project1MainImg.png" id="project3" alt=""> -->
             <div id="hideThis" class="text-center">
                 <h1>Hover over Projects to display image</h1>
                 <i class="fa-solid fa-arrow-left fa-bounce fa-2xl" style="color: #ffffff;"></i>
             </div>
 
-        <!-- image will populate here using javascript looping through the different projectDivs -->
         </div>
     </div>
 
