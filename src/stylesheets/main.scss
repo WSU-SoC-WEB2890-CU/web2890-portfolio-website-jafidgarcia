@@ -257,7 +257,9 @@ nav{
 
       }
 
-
+      #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
+        display: none;
+      }
       #hideThis{
         margin-top: 250px;
       }
@@ -266,11 +268,7 @@ nav{
         background-position: center;
         background-size: contain;
       }
-      ///////////////////////////////////////////////////// 
-
-
-
-      ///////////////////////////////////////////////////// 
+      
       /// Project subpages rules 
       strong{
         font-weight: 800;
@@ -327,6 +325,4 @@ nav{
 
 
 // test
-#image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
-  display: none;
-}
+

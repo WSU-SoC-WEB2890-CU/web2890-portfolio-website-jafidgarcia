@@ -109,7 +109,7 @@ const hoverDivs = document.querySelectorAll(".projectOverview");
 const hideThis = document.getElementById("hideThis");
 
 // Loop through each projectOverview and add event listeners
-hoverDivs.forEach((hoverDiv, index) => {
+hoverDivs.forEach((hoverDiv) => {
   hoverDiv.addEventListener("mouseover", () => {
     // Get the path to the image from the data-image
     // const imageUrl = imageUrls[index];
