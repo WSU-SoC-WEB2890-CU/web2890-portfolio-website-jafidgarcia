@@ -2,12 +2,21 @@
 // bootstraps sm: 576px is too big
 $grid-breakpoints: (
   xs: 0,
-  sm: 400px,
+  sm: 350px,
   md: 668px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
 );
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// );
 // $theme-colors: (
 //   "primary":    $primary,
 //   "secondary":  $secondary,
@@ -284,7 +293,7 @@ nav{
       }
       #hideThis{
         margin-top: 250px;
-        @media(max-width: 400px){
+        @media(min-width: 400px){
           margin-top: 50px;
           .deleteMobile{
             display: none;
