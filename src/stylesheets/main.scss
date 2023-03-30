@@ -243,7 +243,11 @@ nav{
 
       /////////////////////////////////////////////////////
       /// projects home page rules
-      
+      .projectsHomeMessage{
+        @media(max-width: 400px){
+          font-size: 1rem;
+      }
+      }
       .projectOverview{
 
         a{
@@ -253,8 +257,26 @@ nav{
             color: $info;
           }
         }
-        &:hover{transform: scale(1.1);}
+        &:hover{
+          transform: scale(1.1);
+          @media(max-width:400px){
+            transform: scale(.9);
+          }
+        }
 
+
+          @media(max-width: 400px){
+            a{
+              &:hover{
+                color: white;
+              }
+            }
+            margin-bottom: 20px;
+            background-color: $info;
+            .hideMobileList{
+            display: none;
+            }
+        }
       }
 
       #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
@@ -262,13 +284,20 @@ nav{
       }
       #hideThis{
         margin-top: 250px;
+        @media(max-width: 400px){
+          margin-top: 50px;
+          .deleteMobile{
+            display: none;
+          }
+        }
       }
+      
       #displayProjectOverview{
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
       }
-      
+
       /// Project subpages rules 
       strong{
         font-weight: 800;

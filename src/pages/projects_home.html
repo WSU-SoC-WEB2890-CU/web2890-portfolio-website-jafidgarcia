@@ -46,20 +46,21 @@
     
 <div class="container text-white mb-3">
     
-    <h5 class="mb-3">From early brainstorming to prototyping to full stack development, we’ve got you covered.</h5>
+    <h5 class="mb-3 projectsHomeMessage">From early brainstorming to prototyping to full stack development, we’ve got you covered.</h5>
     <h1 class="text-center">Projects</h1>
     <hr class="moves" style="width: 80%; margin: auto;">
 </div>
 
 <!-- main container -->
 <div class="container text-white">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12" >
-<!-- project 1 -->
+    <div class="d-flex flex-column flex-sm-row">
+      <!-- main left side with projects list -->
+        <div class="order-2 order-sm-1 col-lg-4 col-md-4 col-sm-12" >
+      <!-- project 1 -->
             <div class="projectOverview" id="trigger-1">
               <a href="./project1_LensOfJG.html">
                 <h4>01- Lens of JG</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">XD Wireframe</li>
                     <li class="">HMTL, CSS, SASS & Javascript</li>
                     <li class="">Responsive Development</li>
@@ -70,7 +71,7 @@
             <div class="projectOverview" id="trigger-2">
                 <a href="./project2_adventure-sports.html">
                 <h4>02- Adventure Sports Media</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">User Research</li>
                     <li class="">XD Wireframe & Prototype</li>
                     <li class="">HMTL, CSS, SASS & Javascript</li>
@@ -82,7 +83,7 @@
             <div class="projectOverview" id="trigger-3">
               <a href="./project3_OG-Valley-Adapt.html">
                 <h4>03- Ogden Valley Adaptive</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">User Research</li>
                     <li class="">XD High Fidelity App Prototype</li>
                   </ul>
@@ -92,7 +93,7 @@
             <div class="projectOverview" id="trigger-4">
               <a href="./project4_Stock-Trader.html">
                 <h4>04- Stock Trader App</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">VueJS Developement</li>
                     <li class="">Firebase Database Integration</li>
                     <li class="">SPA</li>
@@ -103,7 +104,7 @@
             <div class="projectOverview" id="trigger-5">
               <a href="./project5_JTasks.html">
                 <h4>05- JTasks</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">VueJS Developement</li>
                     <li class="">SPA</li>
                   </ul>
@@ -113,7 +114,7 @@
             <div class="projectOverview" id="trigger-6">
               <a href="./project6_CarDeal.html">
                 <h4>06- CarDeal</h4>
-                <ul class="">
+                <ul class="hideMobileList">
                     <li class="">HMTL, CSS, SASS & Javascript</li>
                     <li class="">Responsive Development</li>
                   </ul>
@@ -122,8 +123,8 @@
 
         </div>
 
-        <!-- right side that displays images -->
-        <div class="col-lg-8 col-md-8 col-sm-12">
+        <!-- main right side that displays images -->
+        <div class="order-1 order-sm-2 col-lg-8 col-md-8 col-sm-12 mb-3">
         <!-- JS triggers which image is displayed -->
           <img class="img-fluid" src="../images/projectMainImg1.png" id="image-1">
           <img class="img-fluid" src="../images/projectMainImg2.png" id="image-2">
@@ -138,10 +139,11 @@
           <img src="../images/project1/project1MainImg.png" id="project3" alt=""> -->
             <div id="hideThis" class="text-center">
                 <h1>Hover over Projects to display image</h1>
-                <i class="fa-solid fa-arrow-left fa-bounce fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-left fa-bounce fa-2xl deleteMobile" style="color: #ffffff;"></i>
             </div>
 
         </div>
+
     </div>
 
     <!-- //////////////////////////////////////////////////////////////////// -->
