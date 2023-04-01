@@ -360,6 +360,17 @@ nav{
       /////////////////////////////////////////////////////
 
 
+
+// resume page
+.resume{
+  float: right;
+}
+.resumeList{
+ li{
+  list-style: circle;
+ } 
+}
+
 // this also needs to be kept at the bottom of the scss so it is not over written by other rules
 // this is for javascript code for fade in effect when scrolling
 // this begins at the aboutUs section
