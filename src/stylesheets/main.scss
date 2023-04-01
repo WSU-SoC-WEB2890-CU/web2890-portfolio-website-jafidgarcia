@@ -360,16 +360,33 @@ nav{
       /////////////////////////////////////////////////////
 
 
+      .camboBody{
+        font-Family: 'Cambo', Serif;
+        font-Size: 1.2rem;
+      }
 
 // resume page
-.resume{
-  float: right;
-}
-.resumeList{
- li{
-  list-style: circle;
- } 
-}
+.resumePage{
+  h1,h2,h3,h4,h5,h6{
+    font-Family: 'Roboto', Sans-Serif;
+    
+    // font-Size: 2.2rem;
+  }
+  p, ul, li{
+    font-Family: 'Cambo', Serif;
+  }
+  .resume{
+    float: right;
+    font-Family: 'Cambo', Serif;
+  }
+  .resumeList{
+   li{
+    list-style: circle;
+   } 
+  }
+  }
+
+
 
 // this also needs to be kept at the bottom of the scss so it is not over written by other rules
 // this is for javascript code for fade in effect when scrolling
