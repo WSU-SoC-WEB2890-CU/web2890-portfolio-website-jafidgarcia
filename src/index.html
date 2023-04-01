@@ -9,13 +9,15 @@
   <meta name="description" content="TODO: Portfolio website ...">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
+<!-- Roboto & Cambo Combo -->
+  <link href="https://fonts.googleapis.com/css?family=Cambo|Roboto:300" rel="stylesheet">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
   <!-- Your HTML goes here -->
-  <nav class="navbar navbar-expand-lg bg-primary mb-3">
+  <nav class="navbar navbar-expand-lg bg-primary mb-3 camboBody">
     <div class="container-fluid">
       <a class="navbar-brand text-secondary" href="#">JStacked</a>
 
@@ -51,7 +53,7 @@
     <video id="video-background" preload muted autoplay loop src="./video/IntroVideo.mp4"></video>
 
     <div class="jumboMessage">
-      <h1 class="text-center text-white mt-1">Full Stack || UX Design</h1>
+      <h1 class="text-center text-white mt-1 robotoHeader">Full Stack || UX Design</h1>
       
       <i class="fa-solid fa-arrow-down fa-bounce arrow mt-3" style="color: #ffffff;"></i>
 
@@ -60,13 +62,13 @@
   </div>
   <!-- end of Desktop video jumbotron -->
 
-    <!-- Desktop video jumbotron -->
+    <!-- Mobile video jumbotron -->
     <div class="container-flex videoContainerMobile">
    
       <video id="video-background" preload muted autoplay loop src="./video/IntroVideo_Vertical.mp4"></video>
   
       <div class="jumboMessage">
-        <h1 class="text-center text-white mt-1">Full Stack || UX Design</h1>
+        <h1 class="text-center text-white mt-1 robotoHeader">Full Stack || UX Design</h1>
         
         <i class="fa-solid fa-arrow-down fa-bounce arrow mt-3" style="color: #ffffff;"></i>
   
@@ -80,6 +82,7 @@
   <!-- about section -->
   <section id="">
     <div class="container">
+      <!-- 5 individual letter images -->
       <div class="text-white mt-5 shadow-lg rounded d-flex justify-content-center">
         <div class=""><img class="img-fluid aboutAnimate" src="./video/A.png" alt=""></div>
         <div class=""><img class="img-fluid aboutAnimate" src="./video/B.png" alt=""></div>
@@ -91,13 +94,12 @@
         <!-- <img class="img-fluid" src="./video/About---Jstacked.png" alt=""> -->
       </div>
       
-      <div class="row shadow-lg px-5">
-        <div class="col-12 text-white mt-5">
+      <div class="row shadow-lg px-3">
+        <div class="col-12 text-white mt-5 camboBody">
           <p >Welcome! My name is <strong class="text-info">Jafid Garcia</strong> , and I am a web developer who is passionate about creating beautiful and functional websites that 
             help businesses and individuals succeed online.</p>
   
-          <p>Over the past few years, I have honed my skills in web development, mastering various programming languages such as HTML, CSS, 
-            and JavaScript. I also have experience working with popular frameworks like Bootstrap and VueJS, and I am always eager to learn new
+          <p>Over the past few years, I have honed my skills in web development, mastering various programming languages such as HTML, CSS, SCSS, JavaScript, Java, and C++. I also have experience working with popular frameworks like Bootstrap and VueJS, and I am always eager to learn new
             technologies and tools to enhance my skills.</p>
   
           <p>What sets me apart from other web developers is my keen eye for design. I believe that a website should not only be functional but also 
@@ -115,7 +117,7 @@
   <section>
     <div class="container">
       <div class="row mt-5">
-        <h1 class="text-center text-white moves">FROM START TO FINISH</h1>
+        <h1 class="text-center text-white moves robotoHeader">FROM START TO FINISH</h1>
         <hr class="moves" style="width: 80%; margin: auto;">
 
       </div>
@@ -124,27 +126,29 @@
           <!-- using d-flex to align the h2 in the center of the lines -->
           <div class="d-flex flex-row mb-3 text-white moves">
             <div class="p-2 line"></div>
-            <div class="p-2"><h2 class="text-white ">My <br> Services</h2></div>
+            <div class="p-2"><h2 class="text-white robotoHeader ">My <br> Services</h2></div>
             <div class="p-2 line"></div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="text-secondary">UX/UI</h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eligendi repellat ducimus eaque reprehenderit nemo tempora, 
-            necessitatibus perspiciatis illo consequatur dolorem similique 
-            odit enim voluptate, at officia doloremque vel quo et.</p>
-          <button class="btn btn-outline-secondary">See UX/UI Projects</button>
+          <h2 class="text-secondary robotoHeader">UX/UI</h2>
+          <p class="text-white camboBody">Whether you're a startup looking to launch your first app or an established 
+            business looking to revamp your digital presence, I'm here to help. From wireframes to prototypes 
+            and everything in between, I'll guide you through the design process to ensure that your digital 
+            product is both visually stunning and highly functional.</p>
+            <a class="btn btn-outline-secondary camboBody" href="./pages/projects_home.html">See UX/UI Projects</a>
+          
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <h2 class="text-secondary">Development</h2>
-          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eligendi repellat ducimus eaque reprehenderit nemo tempora, 
-            necessitatibus perspiciatis illo consequatur dolorem similique 
-            odit enim voluptate, at officia doloremque vel quo et.</p>
-          <button class="btn btn-outline-secondary">See Development Projects</button>
+          <h2 class="text-secondary robotoHeader">Development</h2>
+          <p class="text-white camboBody">As a new full stack developer, I am excited to offer my skills and expertise 
+            in creating dynamic and robust web applications that meet the specific needs of my clients. Whether
+             you need a simple website or web application, I have the knowledge and experience to 
+             deliver top-quality results. With an understanding of multiple programming languages and 
+             frameworks, I am able to develop custom solutions tailored to your unique needs.</p>
+             <a class="btn btn-outline-secondary camboBody" href="./pages/projects_home.html">See Developement Projects</a>
         </div>
       </div>
     </div>
@@ -159,19 +163,18 @@
             <!-- using d-flex to align the h2 in the center of the lines -->
             <div class="d-flex flex-row mb-3 text-white moves">
                       <div class="p-2 line"></div>
-                      <div class="p-2"><h2 class="text-white ">Recent <br> Work</h2></div>
+                      <div class="p-2"><h2 class="text-white robotoHeader">Recent <br> Work</h2></div>
                       <div class="p-2 line"></div>
             </div>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 text-white">
+        <div class="col-lg-8 col-md-8 col-sm-12 text-white camboBody">
           <p>I am proud to share some of my recent work, which showcases my skills in web development 
-            and design. From customizing WordPress themes to building responsive websites from scratch,
-             I have had the pleasure of working with a diverse range of clients and industries.</p>
+            and design as a recently graduated student. From wireframe and prototype designs to building responsive websites from scratch,
+             I have had the pleasure of working with a diverse range of clients and teams.</p>
   
-            <p>My recent projects include a fully responsive e-commerce website for a local fashion brand, a sleek 
-              and modern website for a tech startup, and a customized WordPress website for a non-profit organization. 
-              Each project presented its own unique challenges, and I am proud to say that I was able to deliver exceptional 
-              results that exceeded my clients’ expectations.</p>
+            <p>My recent projects include fully responsive client website for local brands, Android and Apple mobile Application prototypes for
+               a local non-profit organization, and personal projects using VueJS. Each project presented its own unique challenges, and I am 
+               proud to say that I was able to deliver exceptional results that exceeded my clients’ expectations.</p>
               <a href="./pages/projects_home.html" class="btn btn-outline-secondary">See Projects</a>
             
         </div>
@@ -189,7 +192,7 @@
           <!-- using d-flex to align the h2 in the center of the lines -->
           <div class="d-flex flex-row mb-3 text-white moves">
             <div class="p-2 line"></div>
-            <div class="p-2"><h2 class="text-white ">Education <br> & Experience</h2></div>
+            <div class="p-2"><h2 class="text-white robotoHeader">Education <br> & Experience</h2></div>
             <div class="p-2 line"></div>
           </div>
 
@@ -197,17 +200,17 @@
         <div class="col-lg-2 col-md-2 col-sm-12"></div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <h4 class="text-white">Web and User Experience (AAS)</h4>
-          <p class="text-white">April 2023 - Weber State University </p>
+          <p class="text-white camboBody">April 2023 - Weber State University </p>
           <hr>
           <h4 class="text-white">User Experience Design Certificate of Profiency</h4>
-          <p class="text-white">April 2023 - Weber State University </p>
+          <p class="text-white camboBody">April 2023 - Weber State University </p>
           <hr>
           <h4 class="text-white">College Reading & Learning Association (CRLA) Tutor Certification
             for Computer Science </h4>
-            <p class="text-white">April 2023 - Weber State University </p>
+            <p class="text-white camboBody">April 2023 - Weber State University </p>
             <hr>
           <h4 class="text-white">Other College Courses</h4>
-          <button onclick="toggleDiv()" class="btn btn-outline-secondary">See More</button>
+          <button onclick="toggleDiv()" class="btn btn-outline-secondary camboBody">See More</button>
           <!-- collapse div for buttom See More -->
           <div class="container mt-3 text-white " id="myDiv" style="display:none;">
 
@@ -220,7 +223,7 @@
 
           <hr>
           <h4 class="text-white">See Full Resume</h4>
-          <button class="btn btn-outline-secondary">Download Resume</button>
+          <button class="btn btn-outline-secondary camboBody">Download Resume</button>
         </div>
       </div>
     </div>
@@ -235,21 +238,21 @@
           <!-- using d-flex to align the h2 in the center of the lines -->
           <div class="d-flex flex-row mb-3 text-white moves">
             <div class="p-2 line"></div>
-            <div class="p-2"><h2 class="text-white ">Let's <br> Work</h2></div>
+            <div class="p-2"><h2 class="text-white robotoHeader">Let's <br> Work</h2></div>
             <div class="p-2 line"></div>
           </div>
 
         </div>
 
         <div class="col-lg-8 col-md-8 col-sm-12">
-          <H1 class="text-center text-info">jafidgarcia@gmail.com</H1>
+          <H1 class="text-center text-info robotoHeader">jafidgarcia@gmail.com</H1>
 
           <!-- start of form -->
           <form id="contact-form" name="contact-form" action="https://formsubmit.co/jafidgarcia@gmail.com" method="POST">
           <div class="container">
             <div class="row mt-5">
 
-              <div class="col-6">
+              <div class="col-lg-6 col-md-6 col-sm-12" >
                 <div class="form-group">
                   <label class="text-white" for="name">Name</label>
                   <input required type="text" class="form-control" id="name" name="name" placeholder="First and Last Name">
@@ -257,12 +260,12 @@
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="form-group">
                   <label class="text-white" for="email">Email address</label>
                   <!-- <input type="text" id="email" name="email" required  class="form-control"> -->
                   <input required type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
                 </div>
               </div>
             </div>
@@ -294,7 +297,7 @@
           </div>
 
           <div class="d-grid gap-2 col-6 mx-auto mt-3">
-            <button class="btn btn-secondary" type="submit">Send Email</button>
+            <button class="btn btn-secondary camboBody" type="submit">Send Email</button>
 
           </div>
 
@@ -315,11 +318,11 @@
       <!-- container with main footer content -->
       <div class="container">
         <div class="row ">
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-sm-center justify-content-xs-center mb-3">
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-sm-center justify-content-xs-center mb-3 camboBody">
            <h5>Jafid Garcia</h5>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center mb-3 camboBody">
             <ul class="list-group list-group-horizontal">
               <li>
                <!-- Google -->
@@ -338,15 +341,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 text-end d-flex justify-content-sm-center">© 2023</div>
+          <div class="col-lg-4 col-md-4 col-sm-12 text-end d-flex justify-content-sm-center camboBody">© 2023</div>
 
         </div>
       </div>
 
       <!-- message for only the index page or pages with Jared's videos -->
-      <div class="row text-center mt-3">
-        <h6>Intro Video by: <a style="color: #ffffff; text-decoration: none;" 
-          target="_blank" href="https://lens-of-jg.netlify.app/">Lense Of JG</a> </h6>
+      <div class="row text-center mt-3 camboBody">
+        <h6>Intro Video by: <a target="_blank" href="https://lens-of-jg.netlify.app/">Lense Of JG</a> </h6>
       </div>
     </footer>
     </div>

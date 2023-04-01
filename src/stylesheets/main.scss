@@ -9,14 +9,6 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   xxl: 1400px
-// );
 // $theme-colors: (
 //   "primary":    $primary,
 //   "secondary":  $secondary,
@@ -41,10 +33,20 @@ $info: #95B3BF;
 html, body{
     background-color: rgb(4, 22, 40)!important;
 }
+.robotoHeader{
+  font-Family: 'Roboto', Sans-Serif;
+  font-Size: 2.2rem;
+}
+.camboBody{
+  font-Family: 'Cambo', Serif;
+  font-Size: 1.2rem;
+}
 // .container{
 //     background-color: rgb(4, 22, 40);
 // }
 nav{
+  font-Family: 'Cambo', Serif;
+  font-Size: 1.2rem;
     // background-color: rgb(4, 22, 40);
     .nav-link{
         color: white;
@@ -72,7 +74,6 @@ nav{
 
 }
 
-
 #video-background { 
     top: 0;
     right: 0;
@@ -83,7 +84,6 @@ nav{
     display: block;
     height: auto;
   }
-
 
   .videoContainerMobile{
     display: none;
@@ -207,8 +207,6 @@ nav{
       }
     }
 
-
-
     .line {
       position: relative;
     }
@@ -249,7 +247,6 @@ nav{
       //   opacity: 1;
       // }
       
-
       /////////////////////////////////////////////////////
       /// projects home page rules
       .projectsHomeMessage{
@@ -273,7 +270,6 @@ nav{
           }
         }
 
-
           @media(max-width: 400px){
             a{
               &:hover{
@@ -291,6 +287,7 @@ nav{
       #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
         display: none;
       }
+
       #hideThis{
         margin-top: 250px;
         @media(min-width: 400px){
@@ -300,7 +297,7 @@ nav{
           }
         }
       }
-      
+ 
       #displayProjectOverview{
         background-repeat: no-repeat;
         background-position: center;
@@ -311,11 +308,23 @@ nav{
       strong{
         font-weight: 800;
       }
+      h2.text-info{
+        font-Family: 'Roboto', Sans-Serif;
+        font-Size: 2.2rem;
+      }
       .projectDescription > p{
         font-weight:300;
+        font-Family: 'Cambo', Serif;
+        font-Size: 1.2rem;
       }
       .breadCrumbNav{
+        h6{
+          font-Family: 'Roboto', Sans-Serif;
+          font-Size: 2.2rem;
+        }
         a{
+          font-Family: 'Cambo', Serif;
+          font-Size: 1.2rem;
           color: white;
           text-decoration: none;
           &:hover{
@@ -329,11 +338,18 @@ nav{
         box-shadow: #2C3C4E 10px 10px 10px;
       }
 
-
       /////////////////////////////////////////////////////
       // footer rules
       footer{
+        font-Family: 'Cambo', Serif;
+        font-Size: 1.2rem;
         border-top: $info solid 5px;
+        h6{font-size: .8rem;
+        a{
+          color: $info;
+          text-decoration: none;
+        }
+        }
       }
       ul{
         list-style: none;
@@ -342,9 +358,6 @@ nav{
         }
       }
       /////////////////////////////////////////////////////
-
-
-
 
 
 // this also needs to be kept at the bottom of the scss so it is not over written by other rules
@@ -357,10 +370,4 @@ nav{
 .fade-in.show {
   opacity: 1;
 }
-
-
-
-
-
-// test
 
