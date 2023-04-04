@@ -34,19 +34,19 @@ html, body{
     background-color: rgb(4, 22, 40)!important;
 }
 .robotoHeader{
-  font-Family: 'Roboto', Sans-Serif;
-  font-Size: 2.2rem;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 2.2rem;
 }
 .camboBody{
-  font-Family: 'Cambo', Serif;
-  font-Size: 1.2rem;
+  font-family: 'Cambo', Serif;
+  font-size: 1.2rem;
 }
 // .container{
 //     background-color: rgb(4, 22, 40);
 // }
 nav{
-  font-Family: 'Cambo', Serif;
-  font-Size: 1.2rem;
+  font-family: 'Cambo', Serif;
+  font-size: 1.2rem;
     // background-color: rgb(4, 22, 40);
     .nav-link{
         color: white;
@@ -309,22 +309,22 @@ nav{
         font-weight: 800;
       }
       h2.text-info{
-        font-Family: 'Roboto', Sans-Serif;
-        font-Size: 2.2rem;
+        font-family: 'Roboto', Sans-Serif;
+        font-size: 2.2rem;
       }
       .projectDescription > p{
         font-weight:300;
-        font-Family: 'Cambo', Serif;
-        font-Size: 1.2rem;
+        font-family: 'Cambo', Serif;
+        font-size: 1.2rem;
       }
       .breadCrumbNav{
         h6{
-          font-Family: 'Roboto', Sans-Serif;
-          font-Size: 2.2rem;
+          font-family: 'Roboto', Sans-Serif;
+          font-size: 2.2rem;
         }
         a{
-          font-Family: 'Cambo', Serif;
-          font-Size: 1.2rem;
+          font-family: 'Cambo', Serif;
+          font-size: 1.2rem;
           color: white;
           text-decoration: none;
           &:hover{
@@ -341,8 +341,8 @@ nav{
       /////////////////////////////////////////////////////
       // footer rules
       footer{
-        font-Family: 'Cambo', Serif;
-        font-Size: 1.2rem;
+        font-family: 'Cambo', Serif;
+        font-size: 1.2rem;
         border-top: $info solid 5px;
         h6{font-size: .8rem;
         a{
@@ -361,23 +361,23 @@ nav{
 
 
       .camboBody{
-        font-Family: 'Cambo', Serif;
-        font-Size: 1.2rem;
+        font-family: 'Cambo', Serif;
+        font-size: 1.2rem;
       }
 
 // resume page
 .resumePage{
   h1,h2,h3,h4,h5,h6{
-    font-Family: 'Roboto', Sans-Serif;
+    font-family: 'Roboto', Sans-Serif;
     
     // font-Size: 2.2rem;
   }
   p, ul, li{
-    font-Family: 'Cambo', Serif;
+    font-family: 'Cambo', Serif;
   }
   .resume{
     float: right;
-    font-Family: 'Cambo', Serif;
+    font-family: 'Cambo', Serif;
   }
   .resumeList{
    li{
