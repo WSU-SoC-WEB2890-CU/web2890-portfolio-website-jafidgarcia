@@ -21,6 +21,7 @@
     "glob": "^7.2.0",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
+    "rollup-plugin-copy": "^3.4.0",
     "sass": "^1.49.11",
     "vite": "^2.9.0"
   },
