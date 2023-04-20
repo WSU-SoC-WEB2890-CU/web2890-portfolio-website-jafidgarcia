@@ -1,0 +1,88 @@
+.projectsHomeMessage{
+    @media(max-width: 400px){
+      font-size: 1rem;
+  }
+  }
+  .projectOverview{
+
+    a{
+      color: white;
+      text-decoration: none;
+      &:hover{
+        color: $info;
+      }
+    }
+    &:hover{
+      transform: scale(1.1);
+      @media(max-width:400px){
+        transform: scale(.9);
+      }
+    }
+
+      @media(max-width: 400px){
+        a{
+          &:hover{
+            color: white;
+          }
+        }
+        margin-bottom: 20px;
+        background-color: $info;
+        .hideMobileList{
+        display: none;
+        }
+    }
+  }
+
+  #image-1, #image-2, #image-3, #image-4, #image-5, #image-6 {
+    display: none;
+  }
+
+  #hideThis{
+    margin-top: 250px;
+    @media(min-width: 400px){
+      margin-top: 50px;
+      .deleteMobile{
+        display: none;
+      }
+    }
+  }
+
+  #displayProjectOverview{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  /// Project subpages rules 
+  strong{
+    font-weight: 800;
+  }
+  h2.text-info{
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 2.2rem;
+  }
+  .projectDescription > p{
+    font-weight:300;
+    font-family: 'Cambo', Serif;
+    font-size: 1.2rem;
+  }
+  .breadCrumbNav{
+    h6{
+      font-family: 'Roboto', Sans-Serif;
+      font-size: 2.2rem;
+    }
+    a{
+      font-family: 'Cambo', Serif;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      &:hover{
+        color: $info!important;
+      }
+    }
+  }
+  .carousel-caption{
+    background-color: rgba($color: #ffffff, $alpha: .7);
+    border-radius: 30px;
+    box-shadow: #2C3C4E 10px 10px 10px;
+  }
