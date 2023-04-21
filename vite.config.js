@@ -43,7 +43,7 @@ export default defineConfig({
       targets: [
         {
           src: 'src/**/*.pdf',
-          dest: '../dist',
+          dest: 'dist',
         },
       ],
       flatten: false,
